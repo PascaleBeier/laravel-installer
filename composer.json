@@ -1,23 +1,21 @@
 {
-  "name": "froiden/laravel-installer",
-  "description": "Laravel web installer",
+  "name": "pascalebeier/maengelmelder-installer",
+  "description": "Installationsroutine für den Mängelmelder",
   "license": "MIT",
   "type": "library",
 
   "authors": [
     {
-      "name": "Ajay Kumar Choudhary",
-      "email": "ajay@froiden.com"
+      "name": "Pascale Beier",
+      "email": "mail@ascalebeier.de"
     }
   ],
-  "require": {},
   "autoload": {
     "psr-4": {
-      "Froiden\\LaravelInstaller\\": "src/"
+      "PascaleBeier\\MaengelMelder\\Installer\\": "src/"
     },
     "files": [
       "src/functions.php"
     ]
-  },
-  "minimum-stability": "dev"
+  }
 }

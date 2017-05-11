@@ -4,7 +4,7 @@ namespace Froiden\LaravelInstaller\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Routing\Controller;
-use Froiden\LaravelInstaller\Helpers\PermissionsChecker;
+use PascaleBeier\MaengelMelder\Installer\Helpers\PermissionsChecker;
 
 class PermissionsController extends Controller
 {

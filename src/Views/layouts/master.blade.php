@@ -17,7 +17,6 @@
 <div class="master">
     <div class="box">
         <div class="header">
-            <img src="{{ asset('/logo/knap.png') }}" height="40px" alt="">
             <h1 class="header__title">@yield('title')</h1>
         </div>
         <ul class="step">

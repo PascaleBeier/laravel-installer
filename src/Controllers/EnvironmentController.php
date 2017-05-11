@@ -1,10 +1,10 @@
 <?php
 
-namespace Froiden\LaravelInstaller\Controllers;
+namespace PascaleBeier\MaengelMelder\Installer\Controllers;
 
 use Illuminate\Routing\Controller;
-use Froiden\LaravelInstaller\Helpers\EnvironmentManager;
-use Froiden\LaravelInstaller\Request\UpdateRequest;
+use PascaleBeier\MaengelMelder\Installer\Helpers\EnvironmentManager;
+use PascaleBeier\MaengelMelder\Installer\Request\UpdateRequest;
 
 /**
  * Class EnvironmentController

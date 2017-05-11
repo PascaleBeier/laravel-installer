@@ -1,9 +1,9 @@
 <?php
 
-namespace Froiden\LaravelInstaller\Controllers;
+namespace PascaleBeier\MaengelMelder\Installer\Controllers;
 
 use Illuminate\Routing\Controller;
-use Froiden\LaravelInstaller\Helpers\DatabaseManager;
+use PascaleBeier\MaengelMelder\Installer\Helpers\DatabaseManager;
 
 class DatabaseController extends Controller
 {

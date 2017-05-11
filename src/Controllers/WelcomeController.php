@@ -1,6 +1,6 @@
 <?php
 
-namespace Froiden\LaravelInstaller\Controllers;
+namespace PascaleBeier\MaengelMelder\Installer\Controllers;
 
 use Illuminate\Routing\Controller;
 

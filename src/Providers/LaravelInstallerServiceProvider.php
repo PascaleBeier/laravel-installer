@@ -1,10 +1,10 @@
 <?php
 
-namespace Froiden\LaravelInstaller\Providers;
+namespace PascaleBeier\MaengelMelder\Installer\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelInstallerServiceProvider extends ServiceProvider
+class MaengelMelderInstallerServiceProvider extends ServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred.
@@ -32,7 +32,7 @@ class LaravelInstallerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        app('router')->middleware('canInstall', '\Froiden\LaravelInstaller\Middleware\canInstall');
+        app('router')->middleware('canInstall', '\PascaleBeier\MaengelMelder\Installer\Middleware\canInstall');
     }
 
     /**

@@ -16,7 +16,8 @@ return [
         'openssl',
         'pdo',
         'mbstring',
-        'tokenizer'
+        'tokenizer',
+        'zip'
     ],
 
     /*

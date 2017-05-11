@@ -1,6 +1,6 @@
 <?php
 
-namespace Froiden\LaravelInstaller\Middleware;
+namespace PascaleBeier\MaengelMelder\Installer\Middleware;
 
 use Closure;
 use DB;

@@ -18,8 +18,8 @@ return [
      *
      */
     'welcome' => [
-        'title'   => 'Willkommen zum Installer',
-        'message' => 'Willkommen zum Laravel Installationsassistent.',
+        'title'   => 'Installation',
+        'message' => 'Willkommen zum Installationsassistenten.',
     ],
 
 
@@ -29,7 +29,7 @@ return [
      *
      */
     'requirements' => [
-        'title' => 'Vorraussetzungen',
+        'title' => 'Voraussetzungen',
     ],
 
 
@@ -50,9 +50,9 @@ return [
      */
     'environment' => [
         'title' => 'Umgebungsvariablen',
-        'save' => 'Speicher .env',
-        'success' => 'Ihre .env Konfiguration wurde gespeichert.',
-        'errors' => 'Ihre .env Konfiguration konnte nicht gespeichert werden, Bitte erstellen Sie diese Manuell.',
+        'save' => 'Speichern',
+        'success' => 'Ihre Konfiguration wurde gespeichert.',
+        'errors' => 'Ihre Konfiguration konnte nicht gespeichert werden, Bitte erstellen Sie diese Manuell.',
     ],
 
 

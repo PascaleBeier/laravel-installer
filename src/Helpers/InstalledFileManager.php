@@ -1,6 +1,6 @@
 <?php
 
-namespace Froiden\LaravelInstaller\Helpers;
+namespace PascaleBeier\MaengelMelder\Installer\Helpers;
 
 
 class InstalledFileManager

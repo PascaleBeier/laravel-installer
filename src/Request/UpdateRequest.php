@@ -1,8 +1,6 @@
 <?php
 
-namespace Froiden\LaravelInstaller\Request;
-
-
+namespace PascaleBeier\MaengelMelder\Installer\Request;
 
 class UpdateRequest extends CoreRequest
 {

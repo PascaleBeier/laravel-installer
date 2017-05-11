@@ -1,9 +1,9 @@
 <?php
 
-namespace Froiden\LaravelInstaller\Controllers;
+namespace PascaleBeier\MaengelMelder\Installer\Controllers;
 
 use Illuminate\Routing\Controller;
-use Froiden\LaravelInstaller\Helpers\InstalledFileManager;
+use PascaleBeier\MaengelMelder\Installer\Helpers\InstalledFileManager;
 
 class FinalController extends Controller
 {

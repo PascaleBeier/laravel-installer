@@ -1,6 +1,6 @@
 <?php
 
-    namespace Froiden\LaravelInstaller\Request;
+namespace PascaleBeier\MaengelMelder\Installer\Request;
 
 use Illuminate\Foundation\Http\FormRequest;
 use App\Classes\Reply;

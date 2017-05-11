@@ -3,7 +3,7 @@
 namespace Froiden\LaravelInstaller\Controllers;
 
 use Illuminate\Routing\Controller;
-use Froiden\LaravelInstaller\Helpers\RequirementsChecker;
+use PascaleBeier\MaengelMelder\Installer\Helpers\RequirementsChecker;
 
 class RequirementsController extends Controller
 {
