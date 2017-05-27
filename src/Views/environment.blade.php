@@ -2,7 +2,6 @@
 
 @section('title', trans('installer_messages.environment.title'))
 @section('style')
-    <link href="{{ asset('installer/froiden-helper/helper.css') }}" rel="stylesheet"/>
     <style>
         .form-control{
             height: 14px;
@@ -98,8 +97,7 @@
     </script>
 @stop
 @section('scripts')
-    <script src="{{ asset('installer/js/jQuery-2.2.0.min.js') }}"></script>
-    <script src="{{ asset('installer/froiden-helper/helper.js')}}"></script>
+    <script src="{{ asset('installer/js/installer.js') }}"></script>
     <script>
         $.ajaxSetup({
             headers: {
@@ -108,7 +106,7 @@
         });
     </script>
     <script type="text/javascript"
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-asw5ZiMfmxWTBr0TOkx3lWegR4SHxW&libraries=places&callback=initAutocomplete"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-asw5ZiMfmxWTBr0TOkx3lWegR4SHxW4&libraries=places&callback=initAutocomplete"
             async defer></script>
     <script>
         function initAutocomplete() {

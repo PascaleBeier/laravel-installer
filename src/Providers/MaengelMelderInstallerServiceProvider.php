@@ -47,7 +47,7 @@ class MaengelMelderInstallerServiceProvider extends ServiceProvider
         ]);
 
         $this->publishes([
-            __DIR__.'/../assets' => public_path('installer'),
+            __DIR__.'/../../public' => public_path('installer'),
         ], 'public');
 
         $this->publishes([

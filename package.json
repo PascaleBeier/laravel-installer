@@ -1,0 +1,20 @@
+{
+  "devDependencies": {
+    "laravel-mix": "^0.12.0"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
+    "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
+    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "blockui": "git+https://github.com/dailymuse/blockui#feature/convert-2.7.0-to-npm-3.0.0",
+    "bootbox": "^4.4.0",
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "ionicons": "2",
+    "jquery": "^3.2.1",
+    "toastr": "^2.1.2"
+  }
+}

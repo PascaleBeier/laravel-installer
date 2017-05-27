@@ -2,8 +2,7 @@
   "name": "pascalebeier/maengelmelder-installer",
   "description": "Installationsroutine für den Mängelmelder",
   "license": "MIT",
-  "type": "library",
-
+  "type": "project",
   "authors": [
     {
       "name": "Pascale Beier",
