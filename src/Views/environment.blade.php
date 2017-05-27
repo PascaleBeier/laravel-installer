@@ -23,28 +23,28 @@
         <div class="form-group">
             <label class="col-sm-2 control-label">Hostname</label>
             <div class="col-sm-10">
-                <input name="hostname" class="form-control" placeholder="localhost" id="hostname" required>
+                <input name="hostname" class="form-control" placeholder="localhost" id="hostname" required autocomplete="off">
             </div>
             <p class="help-block">Der Hostname der Datenbank</p>
         </div>
         <div class="form-group">
             <label for="username" class="col-sm-2 control-label">Username</label>
             <div class="col-sm-10">
-                <input name="username" class="form-control" placeholder="root" id="username" required>
+                <input name="username" class="form-control" placeholder="root" id="username" required autocomplete="off">
             </div>
             <p class="help-block">Der Nutzername mit Zugriff auf die Datenbank</p>
         </div>
         <div class="form-group">
             <label for="password" class="col-sm-2 control-label">Password</label>
             <div class="col-sm-10">
-                <input type="password" class="form-control" name="password" id="password" required>
+                <input type="password" class="form-control" name="password" id="password" required autocomplete="off">
             </div>
             <p class="help-block">Das Passwort des obigen Datenbank-Nutzers.</p>
         </div>
         <div class="form-group">
             <label for="database" class="col-sm-2 control-label">Datenbank</label>
             <div class="col-sm-10">
-                <input name="database" class="form-control" id="database" placeholder="maengelmelder" required>
+                <input name="database" class="form-control" id="database" placeholder="maengelmelder" required autocomplete="off">
             </div>
             <p class="help-block">Der Name der Datenbank.</p>
         </div>
@@ -57,7 +57,7 @@
                 Name
             </label>
             <div class="col-sm-10">
-                <input name="client_name" class="form-control" id="client_name" placeholder="Stadt Herten" required>
+                <input name="client_name" class="form-control" id="client_name" placeholder="Stadt Herten" required autocomplete="off">
             </div>
             <p class="help-block">
                 Der Name des Kunden - dieser erscheint mitunter auf der Startseite und im Backend.
