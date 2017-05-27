@@ -97,7 +97,6 @@
     </script>
 @stop
 @section('scripts')
-    <script src="{{ asset('installer/js/installer.js') }}"></script>
     <script>
         $.ajaxSetup({
             headers: {

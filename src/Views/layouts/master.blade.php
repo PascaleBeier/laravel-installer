@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ trans('installer_messages.title') }}</title>
-    <link href="{{ asset('installer/css/installer.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('css/installer.css') }}" rel="stylesheet"/>
     @yield('style')
-
 </head>
 <body>
 <div class="master">
@@ -33,5 +32,6 @@
     </div>
 </div>
 </body>
+<script src="{{ asset('js/installer.js') }}"></script>
 @yield('scripts')
 </html>
