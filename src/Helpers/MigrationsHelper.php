@@ -32,5 +32,4 @@ trait MigrationsHelper
         // migrations table should exist, if not, user will receive an error.
         return DB::table('migrations')->get()->pluck('migration');
     }
-
 }

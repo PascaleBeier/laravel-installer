@@ -2,7 +2,6 @@
 
 namespace PascaleBeier\MaengelMelder\Installer\Helpers;
 
-
 class InstalledFileManager
 {
     /**

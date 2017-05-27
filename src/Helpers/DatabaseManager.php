@@ -29,10 +29,9 @@ class DatabaseManager
      */
     private function migrate()
     {
-        try{
+        try {
             Artisan::call('migrate', ["--force"=> true ]);
-        }
-        catch(Exception $e){
+        } catch (Exception $e) {
             return $this->response($e->getMessage());
         }
 
@@ -46,10 +45,9 @@ class DatabaseManager
      */
     private function seed()
     {
-        try{
+        try {
             Artisan::call('db:seed');
-        }
-        catch(Exception $e){
+        } catch (Exception $e) {
             return $this->response($e->getMessage());
         }
 
@@ -76,9 +74,9 @@ class DatabaseManager
      */
     private function sqlite()
     {
-        if(DB::connection() instanceof SQLiteConnection) {
+        if (DB::connection() instanceof SQLiteConnection) {
             $database = DB::connection()->getDatabaseName();
-            if(!file_exists($database)) {
+            if (!file_exists($database)) {
                 touch($database);
                 DB::reconnect(Config::get('database.default'));
             }

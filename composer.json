@@ -7,7 +7,7 @@
   "authors": [
     {
       "name": "Pascale Beier",
-      "email": "mail@ascalebeier.de"
+      "email": "mail@pascalebeier.de"
     }
   ],
   "autoload": {
@@ -17,5 +17,15 @@
     "files": [
       "src/functions.php"
     ]
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.0"
+  },
+  "scripts": {
+    "check-style": "phpcs --standard=PSR2 src/Config src/Controllers src/Helpers src/Lang src/Middleware src/Providers src/Request",
+    "fix-style": "phpcbf --standard=PSR2 src/Config src/Controllers src/Helpers src/Lang src/Middleware src/Providers src/Request"
+  },
+  "config": {
+    "optimize-autoloader": true
   }
 }

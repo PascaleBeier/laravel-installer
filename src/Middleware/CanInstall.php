@@ -6,11 +6,10 @@ use Closure;
 use DB;
 
 /**
- * Class canInstall
- * @package Froiden\LaravelInstaller\Middleware
+ * Class CanInstall
+ * @package PascaleBeier\MaengelMelder\Installer\Middleware
  */
-
-class canInstall
+class CanInstall
 {
     /**
      * Handle an incoming request.
@@ -22,7 +21,7 @@ class canInstall
     public function handle($request, Closure $next)
     {
 
-        if($this->alreadyInstalled()) {
+        if ($this->alreadyInstalled()) {
             abort(404);
         }
         
@@ -38,5 +37,4 @@ class canInstall
     {
         return file_exists(storage_path('installed'));
     }
-
 }

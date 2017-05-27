@@ -47,7 +47,5 @@ class EnvironmentController extends Controller
 
         $message = $this->environmentManager->saveFile($request);
         return $message;
-
     }
-
 }

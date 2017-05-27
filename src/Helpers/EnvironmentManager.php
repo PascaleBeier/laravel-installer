@@ -61,16 +61,20 @@ class EnvironmentManager
         $dbHost = $input->get('hostname');
         $dbUsername = $input->get('username');
         $dbPassword = $input->get('password');
+        $clientName = $input->get('client_name');
+        $clientLocation = $input->get('client_location');
 
         $databaseSetting = 'DB_HOST=' . $dbHost . '
 DB_DATABASE=' . $dbName . '
 DB_USERNAME=' . $dbUsername . '
 DB_PASSWORD=' . $dbPassword . '
+CLIENT_NAME="' .$clientName . '"
+CLIENT_LOCATION="' .$clientLocation . '"
 ';
 
         // @ignoreCodingStandard
         $rows       = explode("\n", $env);
-        $unwanted   = "DB_HOST|DB_DATABASE|DB_USERNAME|DB_PASSWORD";
+        $unwanted   = "DB_HOST|DB_DATABASE|DB_USERNAME|DB_PASSWORD|CLIENT_NAME|CLIENT_LOCATION";
         $cleanArray = preg_grep("/$unwanted/i", $rows, PREG_GREP_INVERT);
 
         $cleanString = implode("\n", $cleanArray);
@@ -83,7 +87,9 @@ DB_PASSWORD=' . $dbPassword . '
             $dbh->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 
             // First check if database exists
-            $stmt = $dbh->query('CREATE DATABASE IF NOT EXISTS '.$dbName.' CHARACTER SET utf8 COLLATE utf8_general_ci;');
+            $stmt = $dbh->query(
+                'CREATE DATABASE IF NOT EXISTS '.$dbName.' CHARACTER SET utf8 COLLATE utf8_general_ci;'
+            );
             // Save settings in session
             $_SESSION['db_username'] = $dbUsername;
             $_SESSION['db_password'] = $dbPassword;
@@ -98,17 +104,11 @@ DB_PASSWORD=' . $dbPassword . '
                 $message = trans('messages.environment.errors');
             }
 
-        return Reply::redirect(route('LaravelInstaller::requirements'), $message);
-
-
+            return Reply::redirect(route('LaravelInstaller::requirements'), $message);
         } catch (\PDOException $e) {
             return Reply::error('DB Error: ' . $e->getMessage());
-
-
         } catch (\Exception $e) {
-
             return Reply::error('DB Error: ' . $e->getMessage());
-
         }
     }
 }

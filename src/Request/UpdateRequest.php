@@ -28,5 +28,4 @@ class UpdateRequest extends CoreRequest
             'database' => 'required',
         ];
     }
-
 }

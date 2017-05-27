@@ -12,5 +12,4 @@ class CoreRequest extends FormRequest
     {
         return Reply::formErrors($validator);
     }
-
 }

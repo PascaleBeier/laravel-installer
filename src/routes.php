@@ -6,8 +6,8 @@ Route::group([
     'prefix' => 'install',
     'as' => 'LaravelInstaller::',
     'namespace' => 'PascaleBeier\MaengelMelder\Installer\Controllers',
-    'middleware' => 'web','install'], function() {
-    Route::get('/', [
+    'middleware' => 'web','install'], function () {
+        Route::get('/', [
             'as' => 'welcome',
             'uses' => 'WelcomeController@welcome'
         ]);
@@ -41,5 +41,4 @@ Route::group([
             'as' => 'final',
             'uses' => 'FinalController@finish'
         ]);
-
-});
+    });

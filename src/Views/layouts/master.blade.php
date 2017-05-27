@@ -17,7 +17,7 @@
 <div class="master">
     <div class="box">
         <div class="header">
-            <h1 class="header__title">@yield('title')</h1>
+            <h1 class="header__title">{{ config('app.name') }} - @yield('title')</h1>
         </div>
         <ul class="step">
             <li class="step__divider"></li>

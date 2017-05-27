@@ -6,7 +6,11 @@ use Closure;
 use PascaleBeier\MaengelMelder\Installer\Helpers\MigrationsHelper;
 use PascaleBeier\MaengelMelder\Installer\Middleware\canInstall;
 
-class canUpdate
+/**
+ * Class CanUpdate
+ * @package PascaleBeier\MaengelMelder\Installer\Middleware
+ */
+class CanUpdate
 {
     use MigrationsHelper;
 
@@ -54,6 +58,4 @@ class canUpdate
         // Continue, the app needs an update
         return false;
     }
-
-
 }

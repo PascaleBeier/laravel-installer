@@ -16,5 +16,4 @@ class WelcomeController extends Controller
     {
         return view('vendor.installer.welcome');
     }
-
 }

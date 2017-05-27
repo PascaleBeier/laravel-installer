@@ -32,7 +32,7 @@ class MaengelMelderInstallerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        app('router')->middleware('canInstall', '\PascaleBeier\MaengelMelder\Installer\Middleware\canInstall');
+        app('router')->middleware('canInstall', '\PascaleBeier\MaengelMelder\Installer\Middleware\CanInstall');
     }
 
     /**
